@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABF549952B5F2DED000C13EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549942B5F2DED000C13EE /* AppDelegate.swift */; };
+		ABF549972B5F2DED000C13EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549962B5F2DED000C13EE /* SceneDelegate.swift */; };
+		ABF5499A2B5F2DED000C13EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF549982B5F2DED000C13EE /* LaunchScreen.storyboard */; };
+		ABF5499D2B5F2DED000C13EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF5499B2B5F2DED000C13EE /* Main.storyboard */; };
+		ABF549A62B5F2DED000C13EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549A52B5F2DED000C13EE /* AppDelegate.swift */; };
+		ABF549A92B5F2DED000C13EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF549A72B5F2DED000C13EE /* Main.storyboard */; };
+		ABF549B02B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ABF549AF2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ABF549BA2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ABF549B92B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ABF549C02B5F2DEE000C13EE /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497B2B5F2DEC000C13EE /* Main.html */; };
+		ABF549C12B5F2DEE000C13EE /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497B2B5F2DEC000C13EE /* Main.html */; };
+		ABF549C22B5F2DEE000C13EE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497D2B5F2DEC000C13EE /* Icon.png */; };
+		ABF549C32B5F2DEE000C13EE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497D2B5F2DEC000C13EE /* Icon.png */; };
+		ABF549C42B5F2DEE000C13EE /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497E2B5F2DEC000C13EE /* Style.css */; };
+		ABF549C52B5F2DEE000C13EE /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497E2B5F2DEC000C13EE /* Style.css */; };
+		ABF549C62B5F2DEE000C13EE /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497F2B5F2DEC000C13EE /* Script.js */; };
+		ABF549C72B5F2DEE000C13EE /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF5497F2B5F2DEC000C13EE /* Script.js */; };
+		ABF549C82B5F2DEE000C13EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549802B5F2DEC000C13EE /* ViewController.swift */; };
+		ABF549C92B5F2DEE000C13EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549802B5F2DEC000C13EE /* ViewController.swift */; };
+		ABF549CA2B5F2DEE000C13EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF549812B5F2DED000C13EE /* Assets.xcassets */; };
+		ABF549CB2B5F2DEE000C13EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF549812B5F2DED000C13EE /* Assets.xcassets */; };
+		ABF549CC2B5F2DEE000C13EE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549832B5F2DED000C13EE /* SafariWebExtensionHandler.swift */; };
+		ABF549CD2B5F2DEE000C13EE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF549832B5F2DED000C13EE /* SafariWebExtensionHandler.swift */; };
+		ABF549CE2B5F2DEE000C13EE /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = ABF549852B5F2DED000C13EE /* _locales */; };
+		ABF549CF2B5F2DEE000C13EE /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = ABF549852B5F2DED000C13EE /* _locales */; };
+		ABF549D02B5F2DEE000C13EE /* images in Resources */ = {isa = PBXBuildFile; fileRef = ABF549862B5F2DED000C13EE /* images */; };
+		ABF549D12B5F2DEE000C13EE /* images in Resources */ = {isa = PBXBuildFile; fileRef = ABF549862B5F2DED000C13EE /* images */; };
+		ABF549D22B5F2DEE000C13EE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF549872B5F2DED000C13EE /* manifest.json */; };
+		ABF549D32B5F2DEE000C13EE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF549872B5F2DED000C13EE /* manifest.json */; };
+		ABF549D42B5F2DEE000C13EE /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF549882B5F2DED000C13EE /* background.js */; };
+		ABF549D52B5F2DEE000C13EE /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF549882B5F2DED000C13EE /* background.js */; };
+		ABF549D62B5F2DEE000C13EE /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF549892B5F2DED000C13EE /* content.js */; };
+		ABF549D72B5F2DEE000C13EE /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF549892B5F2DED000C13EE /* content.js */; };
+		ABF549D82B5F2DEE000C13EE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = ABF5498A2B5F2DED000C13EE /* popup.html */; };
+		ABF549D92B5F2DEE000C13EE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = ABF5498A2B5F2DED000C13EE /* popup.html */; };
+		ABF549DA2B5F2DEE000C13EE /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = ABF5498B2B5F2DED000C13EE /* popup.css */; };
+		ABF549DB2B5F2DEE000C13EE /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = ABF5498B2B5F2DED000C13EE /* popup.css */; };
+		ABF549DC2B5F2DEE000C13EE /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF5498C2B5F2DED000C13EE /* popup.js */; };
+		ABF549DD2B5F2DEE000C13EE /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = ABF5498C2B5F2DED000C13EE /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABF549B12B5F2DEE000C13EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF549752B5F2DEC000C13EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABF549AE2B5F2DEE000C13EE;
+			remoteInfo = "PROZAIC-SafariExtension Extension (iOS)";
+		};
+		ABF549BB2B5F2DEE000C13EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF549752B5F2DEC000C13EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABF549B82B5F2DEE000C13EE;
+			remoteInfo = "PROZAIC-SafariExtension Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABF549E32B5F2DEE000C13EE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ABF549B02B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549EA2B5F2DEE000C13EE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ABF549BA2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ABF5497C2B5F2DEC000C13EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		ABF5497D2B5F2DEC000C13EE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ABF5497E2B5F2DEC000C13EE /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		ABF5497F2B5F2DEC000C13EE /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		ABF549802B5F2DEC000C13EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABF549812B5F2DED000C13EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABF549832B5F2DED000C13EE /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		ABF549852B5F2DED000C13EE /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		ABF549862B5F2DED000C13EE /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		ABF549872B5F2DED000C13EE /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		ABF549882B5F2DED000C13EE /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		ABF549892B5F2DED000C13EE /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		ABF5498A2B5F2DED000C13EE /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		ABF5498B2B5F2DED000C13EE /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		ABF5498C2B5F2DED000C13EE /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		ABF549912B5F2DED000C13EE /* PROZAIC-SafariExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROZAIC-SafariExtension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF549942B5F2DED000C13EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABF549962B5F2DED000C13EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ABF549992B5F2DED000C13EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABF5499C2B5F2DED000C13EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABF5499E2B5F2DED000C13EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF549A32B5F2DED000C13EE /* PROZAIC-SafariExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROZAIC-SafariExtension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF549A52B5F2DED000C13EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABF549A82B5F2DED000C13EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABF549AA2B5F2DED000C13EE /* PROZAIC-SafariExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PROZAIC-SafariExtension.entitlements"; sourceTree = "<group>"; };
+		ABF549AF2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PROZAIC-SafariExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF549B42B5F2DEE000C13EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF549B92B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PROZAIC-SafariExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF549BE2B5F2DEE000C13EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF549BF2B5F2DEE000C13EE /* PROZAIC-SafariExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PROZAIC-SafariExtension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABF5498E2B5F2DED000C13EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549A02B5F2DED000C13EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549AC2B5F2DEE000C13EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549B62B5F2DEE000C13EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABF549742B5F2DEC000C13EE = {
+			isa = PBXGroup;
+			children = (
+				ABF549792B5F2DEC000C13EE /* Shared (App) */,
+				ABF549822B5F2DED000C13EE /* Shared (Extension) */,
+				ABF549932B5F2DED000C13EE /* iOS (App) */,
+				ABF549A42B5F2DED000C13EE /* macOS (App) */,
+				ABF549B32B5F2DEE000C13EE /* iOS (Extension) */,
+				ABF549BD2B5F2DEE000C13EE /* macOS (Extension) */,
+				ABF549922B5F2DED000C13EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF549792B5F2DEC000C13EE /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549802B5F2DEC000C13EE /* ViewController.swift */,
+				ABF549812B5F2DED000C13EE /* Assets.xcassets */,
+				ABF5497A2B5F2DEC000C13EE /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		ABF5497A2B5F2DEC000C13EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABF5497B2B5F2DEC000C13EE /* Main.html */,
+				ABF5497D2B5F2DEC000C13EE /* Icon.png */,
+				ABF5497E2B5F2DEC000C13EE /* Style.css */,
+				ABF5497F2B5F2DEC000C13EE /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABF549822B5F2DED000C13EE /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549832B5F2DED000C13EE /* SafariWebExtensionHandler.swift */,
+				ABF549842B5F2DED000C13EE /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		ABF549842B5F2DED000C13EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549852B5F2DED000C13EE /* _locales */,
+				ABF549862B5F2DED000C13EE /* images */,
+				ABF549872B5F2DED000C13EE /* manifest.json */,
+				ABF549882B5F2DED000C13EE /* background.js */,
+				ABF549892B5F2DED000C13EE /* content.js */,
+				ABF5498A2B5F2DED000C13EE /* popup.html */,
+				ABF5498B2B5F2DED000C13EE /* popup.css */,
+				ABF5498C2B5F2DED000C13EE /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABF549922B5F2DED000C13EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549912B5F2DED000C13EE /* PROZAIC-SafariExtension.app */,
+				ABF549A32B5F2DED000C13EE /* PROZAIC-SafariExtension.app */,
+				ABF549AF2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */,
+				ABF549B92B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF549932B5F2DED000C13EE /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549942B5F2DED000C13EE /* AppDelegate.swift */,
+				ABF549962B5F2DED000C13EE /* SceneDelegate.swift */,
+				ABF549982B5F2DED000C13EE /* LaunchScreen.storyboard */,
+				ABF5499B2B5F2DED000C13EE /* Main.storyboard */,
+				ABF5499E2B5F2DED000C13EE /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		ABF549A42B5F2DED000C13EE /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549A52B5F2DED000C13EE /* AppDelegate.swift */,
+				ABF549A72B5F2DED000C13EE /* Main.storyboard */,
+				ABF549AA2B5F2DED000C13EE /* PROZAIC-SafariExtension.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		ABF549B32B5F2DEE000C13EE /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549B42B5F2DEE000C13EE /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		ABF549BD2B5F2DEE000C13EE /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				ABF549BE2B5F2DEE000C13EE /* Info.plist */,
+				ABF549BF2B5F2DEE000C13EE /* PROZAIC-SafariExtension.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABF549902B5F2DED000C13EE /* PROZAIC-SafariExtension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF549E42B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension (iOS)" */;
+			buildPhases = (
+				ABF5498D2B5F2DED000C13EE /* Sources */,
+				ABF5498E2B5F2DED000C13EE /* Frameworks */,
+				ABF5498F2B5F2DED000C13EE /* Resources */,
+				ABF549E32B5F2DEE000C13EE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABF549B22B5F2DEE000C13EE /* PBXTargetDependency */,
+			);
+			name = "PROZAIC-SafariExtension (iOS)";
+			productName = "PROZAIC-SafariExtension (iOS)";
+			productReference = ABF549912B5F2DED000C13EE /* PROZAIC-SafariExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABF549A22B5F2DED000C13EE /* PROZAIC-SafariExtension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF549EB2B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension (macOS)" */;
+			buildPhases = (
+				ABF5499F2B5F2DED000C13EE /* Sources */,
+				ABF549A02B5F2DED000C13EE /* Frameworks */,
+				ABF549A12B5F2DED000C13EE /* Resources */,
+				ABF549EA2B5F2DEE000C13EE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABF549BC2B5F2DEE000C13EE /* PBXTargetDependency */,
+			);
+			name = "PROZAIC-SafariExtension (macOS)";
+			productName = "PROZAIC-SafariExtension (macOS)";
+			productReference = ABF549A32B5F2DED000C13EE /* PROZAIC-SafariExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABF549AE2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF549E02B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension Extension (iOS)" */;
+			buildPhases = (
+				ABF549AB2B5F2DEE000C13EE /* Sources */,
+				ABF549AC2B5F2DEE000C13EE /* Frameworks */,
+				ABF549AD2B5F2DEE000C13EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PROZAIC-SafariExtension Extension (iOS)";
+			productName = "PROZAIC-SafariExtension Extension (iOS)";
+			productReference = ABF549AF2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		ABF549B82B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF549E72B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension Extension (macOS)" */;
+			buildPhases = (
+				ABF549B52B5F2DEE000C13EE /* Sources */,
+				ABF549B62B5F2DEE000C13EE /* Frameworks */,
+				ABF549B72B5F2DEE000C13EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PROZAIC-SafariExtension Extension (macOS)";
+			productName = "PROZAIC-SafariExtension Extension (macOS)";
+			productReference = ABF549B92B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF549752B5F2DEC000C13EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					ABF549902B5F2DED000C13EE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					ABF549A22B5F2DED000C13EE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					ABF549AE2B5F2DEE000C13EE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					ABF549B82B5F2DEE000C13EE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = ABF549782B5F2DEC000C13EE /* Build configuration list for PBXProject "PROZAIC-SafariExtension" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABF549742B5F2DEC000C13EE;
+			productRefGroup = ABF549922B5F2DED000C13EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF549902B5F2DED000C13EE /* PROZAIC-SafariExtension (iOS) */,
+				ABF549A22B5F2DED000C13EE /* PROZAIC-SafariExtension (macOS) */,
+				ABF549AE2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension (iOS) */,
+				ABF549B82B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABF5498F2B5F2DED000C13EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549C22B5F2DEE000C13EE /* Icon.png in Resources */,
+				ABF5499A2B5F2DED000C13EE /* LaunchScreen.storyboard in Resources */,
+				ABF549C02B5F2DEE000C13EE /* Main.html in Resources */,
+				ABF549C62B5F2DEE000C13EE /* Script.js in Resources */,
+				ABF549CA2B5F2DEE000C13EE /* Assets.xcassets in Resources */,
+				ABF5499D2B5F2DED000C13EE /* Main.storyboard in Resources */,
+				ABF549C42B5F2DEE000C13EE /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549A12B5F2DED000C13EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549C32B5F2DEE000C13EE /* Icon.png in Resources */,
+				ABF549C52B5F2DEE000C13EE /* Style.css in Resources */,
+				ABF549A92B5F2DED000C13EE /* Main.storyboard in Resources */,
+				ABF549C72B5F2DEE000C13EE /* Script.js in Resources */,
+				ABF549CB2B5F2DEE000C13EE /* Assets.xcassets in Resources */,
+				ABF549C12B5F2DEE000C13EE /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549AD2B5F2DEE000C13EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549D42B5F2DEE000C13EE /* background.js in Resources */,
+				ABF549DA2B5F2DEE000C13EE /* popup.css in Resources */,
+				ABF549D82B5F2DEE000C13EE /* popup.html in Resources */,
+				ABF549D02B5F2DEE000C13EE /* images in Resources */,
+				ABF549D22B5F2DEE000C13EE /* manifest.json in Resources */,
+				ABF549CE2B5F2DEE000C13EE /* _locales in Resources */,
+				ABF549D62B5F2DEE000C13EE /* content.js in Resources */,
+				ABF549DC2B5F2DEE000C13EE /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549B72B5F2DEE000C13EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549D52B5F2DEE000C13EE /* background.js in Resources */,
+				ABF549DB2B5F2DEE000C13EE /* popup.css in Resources */,
+				ABF549D92B5F2DEE000C13EE /* popup.html in Resources */,
+				ABF549D12B5F2DEE000C13EE /* images in Resources */,
+				ABF549D32B5F2DEE000C13EE /* manifest.json in Resources */,
+				ABF549CF2B5F2DEE000C13EE /* _locales in Resources */,
+				ABF549D72B5F2DEE000C13EE /* content.js in Resources */,
+				ABF549DD2B5F2DEE000C13EE /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABF5498D2B5F2DED000C13EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549C82B5F2DEE000C13EE /* ViewController.swift in Sources */,
+				ABF549952B5F2DED000C13EE /* AppDelegate.swift in Sources */,
+				ABF549972B5F2DED000C13EE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF5499F2B5F2DED000C13EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549C92B5F2DEE000C13EE /* ViewController.swift in Sources */,
+				ABF549A62B5F2DED000C13EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549AB2B5F2DEE000C13EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549CC2B5F2DEE000C13EE /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF549B52B5F2DEE000C13EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF549CD2B5F2DEE000C13EE /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABF549B22B5F2DEE000C13EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABF549AE2B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension (iOS) */;
+			targetProxy = ABF549B12B5F2DEE000C13EE /* PBXContainerItemProxy */;
+		};
+		ABF549BC2B5F2DEE000C13EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABF549B82B5F2DEE000C13EE /* PROZAIC-SafariExtension Extension (macOS) */;
+			targetProxy = ABF549BB2B5F2DEE000C13EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABF5497B2B5F2DEC000C13EE /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF5497C2B5F2DEC000C13EE /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		ABF549982B5F2DED000C13EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF549992B5F2DED000C13EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ABF5499B2B5F2DED000C13EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF5499C2B5F2DED000C13EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABF549A72B5F2DED000C13EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF549A82B5F2DED000C13EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABF549DE2B5F2DEE000C13EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABF549DF2B5F2DEE000C13EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		ABF549E12B5F2DEE000C13EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension.Extension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABF549E22B5F2DEE000C13EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension.Extension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABF549E52B5F2DEE000C13EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABF549E62B5F2DEE000C13EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABF549E82B5F2DEE000C13EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/PROZAIC-SafariExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension.Extension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ABF549E92B5F2DEE000C13EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/PROZAIC-SafariExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension.Extension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ABF549EC2B5F2DEE000C13EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/PROZAIC-SafariExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ABF549ED2B5F2DEE000C13EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/PROZAIC-SafariExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PROZAIC-SafariExtension";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DukeDo.PROZAIC-SafariExtension";
+				PRODUCT_NAME = "PROZAIC-SafariExtension";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABF549782B5F2DEC000C13EE /* Build configuration list for PBXProject "PROZAIC-SafariExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF549DE2B5F2DEE000C13EE /* Debug */,
+				ABF549DF2B5F2DEE000C13EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF549E02B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF549E12B5F2DEE000C13EE /* Debug */,
+				ABF549E22B5F2DEE000C13EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF549E42B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF549E52B5F2DEE000C13EE /* Debug */,
+				ABF549E62B5F2DEE000C13EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF549E72B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF549E82B5F2DEE000C13EE /* Debug */,
+				ABF549E92B5F2DEE000C13EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF549EB2B5F2DEE000C13EE /* Build configuration list for PBXNativeTarget "PROZAIC-SafariExtension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF549EC2B5F2DEE000C13EE /* Debug */,
+				ABF549ED2B5F2DEE000C13EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF549752B5F2DEC000C13EE /* Project object */;
+}
